@@ -1,26 +1,199 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f7fb;
+            color: #333;
+        }
 
-<html>
-    <head>
-        <title>fisat</title>
-        <meta charset="UTF-8">
-        <meta name="viewpot" content="width=device-width, intial-scale=1.0">
-        <meta name="describtion" content="learning html fundamental">
-        <meta name="keywords" content="html,css,web development">
-        <style>
-            h1{color:red;}
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #fff;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+            border-radius: 10px;
+            overflow: hidden;
+        }
 
-        </style>
-        <script>
-            alert("Hello students");
-        </script>
-        <link rel="stylesheet" href="style.css">
-    </head>
+        header {
+            background: #0b79f7;
+            color: #fff;
+            padding: 32px 40px;
+        }
 
-    <body>
-        <h1>hi</h1>
-        <h2>welcome to my web page</h2>
+        header h1 {
+            margin: 0;
+            font-size: 2.4rem;
+        }
 
-    </body>
+        header p {
+            margin: 8px 0 0;
+            font-size: 1rem;
+            opacity: 0.9;
+        }
 
+        .profile {
+            display: grid;
+            grid-template-columns: 1fr 280px;
+            gap: 24px;
+            padding: 32px 40px;
+        }
+
+        .section {
+            margin-bottom: 32px;
+        }
+
+        .section h2 {
+            margin-bottom: 16px;
+            font-size: 1.25rem;
+            border-bottom: 2px solid #e4e9f2;
+            padding-bottom: 8px;
+            color: #0b416d;
+        }
+
+        .section p,
+        .section li {
+            line-height: 1.7;
+        }
+
+        .sidebar {
+            background: #f7faff;
+            border-radius: 10px;
+            padding: 24px;
+            height: fit-content;
+        }
+
+        .sidebar h3 {
+            margin-top: 0;
+            font-size: 1rem;
+            color: #0b416d;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sidebar li {
+            margin-bottom: 10px;
+        }
+
+        .experience-item {
+            margin-bottom: 24px;
+        }
+
+        .experience-item h3 {
+            margin: 0 0 6px;
+            font-size: 1.1rem;
+        }
+
+        .experience-item span {
+            display: block;
+            color: #777;
+            margin-bottom: 10px;
+        }
+
+        .experience-item ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        .contact-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .contact-list li {
+            margin-bottom: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Alex Morgan</h1>
+            <p>Product-focused web developer who writes clean, human-centered interfaces and enjoys turning ideas into reliable user experiences.</p>
+        </header>
+
+        <div class="profile">
+            <div>
+                <section class="section">
+                    <h2>About Me</h2>
+                    <p>I love collaborating with designers and teams to build responsive, accessible websites. I bring a positive attitude, strong communication, and a practical approach to solving problems from planning through launch.</p>
+                </section>
+
+                <section class="section">
+                    <h2>Experience</h2>
+
+                    <article class="experience-item">
+                        <h3>Front-End Developer</h3>
+                        <span>BrightByte Studio · 2023 – Present</span>
+                        <ul>
+                            <li>Built polished landing pages and customer dashboards with HTML, CSS, and JavaScript.</li>
+                            <li>Improved load performance and accessibility for mobile users, leading to a smoother site experience.</li>
+                            <li>Worked closely with product and UX teams to deliver features on time.</li>
+                        </ul>
+                    </article>
+
+                    <article class="experience-item">
+                        <h3>Junior Web Developer</h3>
+                        <span>Pulse Media Agency · 2021 – 2023</span>
+                        <ul>
+                            <li>Created responsive website layouts and reusable design components.</li>
+                            <li>Maintained and updated client sites while keeping content fresh and aligned with brand goals.</li>
+                            <li>Communicated with stakeholders to refine requirements and provide progress updates.</li>
+                        </ul>
+                    </article>
+                </section>
+
+                <section class="section">
+                    <h2>Education</h2>
+                    <p>Bachelor of Science in Information Technology</p>
+                    <p>City University · Graduated 2021</p>
+                </section>
+            </div>
+
+            <aside class="sidebar">
+                <section class="section">
+                    <h3>Contact</h3>
+                    <ul class="contact-list">
+                        <li>Email: alex.morgan@email.com</li>
+                        <li>Phone: (555) 123-4567</li>
+                        <li>Website: www.alexmorgan.dev</li>
+                        <li>Location: Lagos, Nigeria</li>
+                    </ul>
+                </section>
+
+                <section class="section">
+                    <h3>Skills</h3>
+                    <ul>
+                        <li>HTML / CSS / JavaScript</li>
+                        <li>Responsive design</li>
+                        <li>Web accessibility</li>
+                        <li>Version control (Git)</li>
+                    </ul>
+                </section>
+
+                <section class="section">
+                    <h3>Tools</h3>
+                    <ul>
+                        <li>Visual Studio Code</li>
+                        <li>Figma</li>
+                        <li>GitHub</li>
+                        <li>Chrome DevTools</li>
+                    </ul>
+                </section>
+            </aside>
+        </div>
+    </div>
+</body>
 </html>
