@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
-    <style>
+    <!--<style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -115,28 +115,43 @@
         .contact-list li {
             margin-bottom: 12px;
         }
-    </style>
+    </style>-->
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>Alex Morgan</h1>
+            <h1>Arjun R Menon</h1>
+            <hr style="height: 3px; background-color: blue; border: none;">
             <p>Product-focused web developer who writes clean, human-centered interfaces and enjoys turning ideas into reliable user experiences.</p>
         </header>
 
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
         <div class="profile">
             <div>
-                <section class="section">
+                <section id="about" class="section">
                     <h2>About Me</h2>
-                    <p>I love collaborating with designers and teams to build responsive, accessible websites. I bring a positive attitude, strong communication, and a practical approach to solving problems from planning through launch.</p>
+                    <p>Hi, I would like to define myself as a physics and maths enthusiast.I have a deep passion for electronic circuits and enjoy designing and building innovative solutions.I am also looking forward to contribute further in the field of industrial automation and chemical process control.Flight dynamics are also one of my many intrests.Apart from this, I also have a unique interest for web design and front end development.</p><br>
+                    <img src="C:\Users\Ethnotech\Downloads\ARM.jpg" alt="Image unavailable" width="500" height="500">
+                    <p>Hear from me:</p><br>
+                    <audio controls>
+                        <source src="C:\Users\Ethnotech\Desktop\Arjun EIE\First.mp3" type="audio/mpeg">
+                    </audio>
                 </section>
 
-                <section class="section">
+                <section id="experience" class="section">
                     <h2>Experience</h2>
 
                     <article class="experience-item">
                         <h3>Front-End Developer</h3>
-                        <span>BrightByte Studio · 2023 – Present</span>
+                        <span>BrightByte Studio · 2025-2026</span>
                         <ul>
                             <li>Built polished landing pages and customer dashboards with HTML, CSS, and JavaScript.</li>
                             <li>Improved load performance and accessibility for mobile users, leading to a smoother site experience.</li>
@@ -146,35 +161,53 @@
 
                     <article class="experience-item">
                         <h3>Junior Web Developer</h3>
-                        <span>Pulse Media Agency · 2021 – 2023</span>
+                        <span>Pulse Media Agency · 2026- Present</span>
                         <ul>
                             <li>Created responsive website layouts and reusable design components.</li>
                             <li>Maintained and updated client sites while keeping content fresh and aligned with brand goals.</li>
                             <li>Communicated with stakeholders to refine requirements and provide progress updates.</li>
+                            <li>A small glimpse of my work:</li>
                         </ul>
+                        <video autoplay muted width="600" height="600">
+                            <source src="C:\Users\Ethnotech\Desktop\Arjun new1\third.mp4" type="video/mp4" width="600" height="600">
+                            <track src="C:\Users\Ethnotech\Desktop\Arjun new1\third.vtt" kind="subtitles" srclang="en" label="English">
+                            </video>
                     </article>
                 </section>
 
-                <section class="section">
+                <section id="education" class="section">
                     <h2>Education</h2>
-                    <p>Bachelor of Science in Information Technology</p>
-                    <p>City University · Graduated 2021</p>
+                    <p>Bachelor of Technology in Electronics and Instrumentation Engineering</p><br>
+                    <p>APJ AKTU · Graduation 2029</p><br>
                 </section>
+
+                <details>
+                    <summary>More about my work style</summary>
+                    <p>Focused on building useful, accessible products with clear communication and thoughtful iteration.</p>
+                </details>
             </div>
 
             <aside class="sidebar">
-                <section class="section">
-                    <h3>Contact</h3>
-                    <ul class="contact-list">
-                        <li>Email: alex.morgan@email.com</li>
-                        <li>Phone: (555) 123-4567</li>
-                        <li>Website: www.alexmorgan.dev</li>
-                        <li>Location: Lagos, Nigeria</li>
-                    </ul>
+                <section id="contact" class="section">
+                    <h4>Contact</h4>
+                    <ol class="contact-list">
+                        <li>Email: arjunrmenon26@gmail.com</li>
+                        <li>Phone: 8137024500</li>
+                        <li>Website: www.arjunrmenon.dev</li>
+                        <li>Location:Kochi, India</li>
+                    </ol>
+                    <iframe
+  src="https://maps.google.com/maps?q=Federal%20Institute%20of%20Science%20and%20Technology%20(FISAT),%20Angamaly,%20Kerala&t=&z=15&ie=UTF8&iwloc=&output=embed"
+  width="100%"
+  height="450"
+  style="border:0;"
+  loading="lazy"
+  allowfullscreen>
+</iframe>
                 </section>
 
                 <section class="section">
-                    <h3>Skills</h3>
+                    <h5>Skills</h5>
                     <ul>
                         <li>HTML / CSS / JavaScript</li>
                         <li>Responsive design</li>
@@ -184,7 +217,7 @@
                 </section>
 
                 <section class="section">
-                    <h3>Tools</h3>
+                    <h6>Tools</h6>
                     <ul>
                         <li>Visual Studio Code</li>
                         <li>Figma</li>
@@ -192,8 +225,16 @@
                         <li>Chrome DevTools</li>
                     </ul>
                 </section>
+
+                <figure>
+                    <blockquote>“Simple, human-focused design matters.”</blockquote>
+                    <figcaption>Personal design philosophy</figcaption>
+                </figure>
             </aside>
         </div>
+        <footer style="padding: 20px 40px; text-align: center; color: #555; font-size: 0.95rem;">
+            
+        </footer>
     </div>
 </body>
 </html>
